@@ -1382,8 +1382,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 
 ;;; Rainbow Support
 
-(declare-function rainbow-mode 'rainbow-mode)
-(declare-function rainbow-colorize-by-assoc 'rainbow-mode)
+(declare-function rainbow-mode  "ext:rainbow-mode")
+(declare-function rainbow-colorize-by-assoc "ext:rainbow-mode")
 
 (defvar zenburn-add-font-lock-keywords nil
   "Whether to add font-lock keywords for zenburn color names.
