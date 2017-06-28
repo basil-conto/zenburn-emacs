@@ -78,8 +78,7 @@ Each element has the form (NAME . HEX).
 `+N' suffixes indicate a color is lighter.
 `-N' suffixes indicate a color is darker.")
 
-(defvar zenburn-override-colors-alist
-  '()
+(defvar zenburn-override-colors-alist ()
   "Place to override default theme colors.
 
 You can override a subset of the theme's default colors by
@@ -1339,10 +1338,9 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; yascroll
    `(yascroll:thumb-text-area ((t (:background ,zenburn-bg-1))))
    `(yascroll:thumb-fringe ((t (:background ,zenburn-bg-1 :foreground ,zenburn-bg-1))))
-   ))
+   )
 
 ;;; Theme Variables
-(zenburn-with-color-variables
   (custom-theme-set-variables
    'zenburn
 ;;;;; ansi-color
@@ -1426,4 +1424,5 @@ This requires library `rainbow-mode'.")
 ;; indent-tabs-mode: nil
 ;; eval: (when (require 'rainbow-mode nil t) (rainbow-mode 1))
 ;; End:
+
 ;;; zenburn-theme.el ends here
