@@ -113,6 +113,7 @@ Also bind `class' to ((class color) (min-colors 89))."
                                   :background ,zenburn-bg-1
                                   :box (:line-width -1 :style released-button)))))
    `(highlight ((t (:background ,zenburn-bg-05))))
+   `(line-number ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
    `(link ((t (:foreground ,zenburn-yellow :underline t :weight bold))))
    `(link-visited ((t (:foreground ,zenburn-yellow-2 :underline t :weight normal))))
    `(success ((t (:foreground ,zenburn-green :weight bold))))
