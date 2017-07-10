@@ -105,19 +105,19 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;; Built-in
 ;;;;; basic coloring
    '(button ((t (:underline t))))
-   `(link ((t (:foreground ,zenburn-yellow :underline t :weight bold))))
-   `(link-visited ((t (:foreground ,zenburn-yellow-2 :underline t :weight normal))))
-   `(default ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
    `(cursor ((t (:foreground ,zenburn-fg :background ,zenburn-fg+1))))
+   `(default ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
    `(escape-glyph ((t (:foreground ,zenburn-yellow :weight bold))))
    `(fringe ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
    `(header-line ((t (:foreground ,zenburn-yellow
                                   :background ,zenburn-bg-1
                                   :box (:line-width -1 :style released-button)))))
    `(highlight ((t (:background ,zenburn-bg-05))))
+   `(link ((t (:foreground ,zenburn-yellow :underline t :weight bold))))
+   `(link-visited ((t (:foreground ,zenburn-yellow-2 :underline t :weight normal))))
    `(success ((t (:foreground ,zenburn-green :weight bold))))
-   `(warning ((t (:foreground ,zenburn-orange :weight bold))))
    `(tooltip ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
+   `(warning ((t (:foreground ,zenburn-orange :weight bold))))
 ;;;;; compilation
    `(compilation-column-face ((t (:foreground ,zenburn-yellow))))
    `(compilation-enter-directory-face ((t (:foreground ,zenburn-green))))
